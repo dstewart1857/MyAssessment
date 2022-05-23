@@ -1,13 +1,14 @@
 using NUnit.Framework;
-using Wordle_API.Controller;
-
+using System.Collections.Generic;
+using Wordle_API.Controllers;
+using Wordle_API.DTO;
 
 namespace Wordle_API_Tests
 {
     [TestFixture]
     public class Tests
     {
-//        public WordController wordController = new();
+        public WordController wordController = new();
 
         [SetUp]
         public void Setup()
@@ -15,9 +16,9 @@ namespace Wordle_API_Tests
         }
 
         [Test]
-        public void VerifyWordsLoad()
+        public void GetWords()
         {
-
+            List<WordDTO> wordCollection = wordController.GetWordCollection();
             Assert.Pass();
         }
     }

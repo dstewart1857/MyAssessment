@@ -97,3 +97,17 @@ C:\Repos\MyAssessment\Wordle-API-Tests\obj\Debug\net6.0\refint\Wordle_API_Tests.
 C:\Repos\MyAssessment\Wordle-API-Tests\obj\Debug\net6.0\Wordle_API_Tests.pdb
 C:\Repos\MyAssessment\Wordle-API-Tests\obj\Debug\net6.0\Wordle_API_Tests.genruntimeconfig.cache
 C:\Repos\MyAssessment\Wordle-API-Tests\obj\Debug\net6.0\ref\Wordle_API_Tests.dll
+C:\Repos\MyAssessment\Wordle-API-Tests\bin\Debug\net6.0\CoverletSourceRootsMapping
+C:\Repos\MyAssessment\Wordle-API-Tests\bin\Debug\net6.0\Wordle_API.deps.json
+C:\Repos\MyAssessment\Wordle-API-Tests\bin\Debug\net6.0\Wordle_API.runtimeconfig.json
+C:\Repos\MyAssessment\Wordle-API-Tests\bin\Debug\net6.0\appsettings.Development.json
+C:\Repos\MyAssessment\Wordle-API-Tests\bin\Debug\net6.0\appsettings.json
+C:\Repos\MyAssessment\Wordle-API-Tests\bin\Debug\net6.0\words.json
+C:\Repos\MyAssessment\Wordle-API-Tests\bin\Debug\net6.0\Wordle_API.exe
+C:\Repos\MyAssessment\Wordle-API-Tests\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Repos\MyAssessment\Wordle-API-Tests\bin\Debug\net6.0\Swashbuckle.AspNetCore.Annotations.dll
+C:\Repos\MyAssessment\Wordle-API-Tests\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Repos\MyAssessment\Wordle-API-Tests\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Repos\MyAssessment\Wordle-API-Tests\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Repos\MyAssessment\Wordle-API-Tests\bin\Debug\net6.0\Wordle_API.dll
+C:\Repos\MyAssessment\Wordle-API-Tests\bin\Debug\net6.0\Wordle_API.pdb

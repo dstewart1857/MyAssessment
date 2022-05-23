@@ -12,6 +12,11 @@ namespace Wordle_API.Controllers
         private WordService wordService = new();
         private static List<WordDTO> wordCollection = new();
 
+        public WordController()
+        {
+            wordCollection.AddRange(wordService.GetWords());
+        }
+/*
         [Route("loadWords")]
         [HttpPost]
         [SwaggerOperation(Summary = "-- Adds word objects to a word collection.",
@@ -21,7 +26,7 @@ namespace Wordle_API.Controllers
             List<WordDTO> words = wordService.GetWords();
             wordCollection.AddRange(words);
         }
-
+*/
         [Route("getWords")]
         [HttpGet]
         [SwaggerOperation(Summary = "-- Gets a list of word objects from a previously built word collection.",
@@ -31,7 +36,6 @@ namespace Wordle_API.Controllers
             return wordCollection;
         }
 
-        //[Route("getRandomWord")]
         [HttpGet(Name = "getRandomWord")]
         [SwaggerOperation(Summary = "-- Gets a random word from a previously built word collection.",
                         Description = "Returns a random word from objects stored in the word collection.")]
