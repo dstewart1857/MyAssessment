@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wordle-API", "Wordle-API\Wordle-API.csproj", "{6FAD425D-A686-4F2E-912D-43003EB1DF9A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wordle_API", "Wordle-API\Wordle_API.csproj", "{6FAD425D-A686-4F2E-912D-43003EB1DF9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wordle-API-Tests", "Wordle-API-Tests\Wordle-API-Tests.csproj", "{B5F75214-69D2-48B6-A835-169E67779106}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wordle_API_Tests", "Wordle-API-Tests\Wordle_API_Tests.csproj", "{B5F75214-69D2-48B6-A835-169E67779106}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -3861,9 +3861,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Repos\\MyAssessment\\Wordle-API-Tests\\Wordle-API-Tests.csproj",
-      "projectName": "Wordle-API-Tests",
-      "projectPath": "C:\\Repos\\MyAssessment\\Wordle-API-Tests\\Wordle-API-Tests.csproj",
+      "projectUniqueName": "C:\\Repos\\MyAssessment\\Wordle-API-Tests\\Wordle_API_Tests.csproj",
+      "projectName": "Wordle_API_Tests",
+      "projectPath": "C:\\Repos\\MyAssessment\\Wordle-API-Tests\\Wordle_API_Tests.csproj",
       "packagesPath": "C:\\Users\\Doug.Stewart\\.nuget\\packages\\",
       "outputPath": "C:\\Repos\\MyAssessment\\Wordle-API-Tests\\obj\\",
       "projectStyle": "PackageReference",

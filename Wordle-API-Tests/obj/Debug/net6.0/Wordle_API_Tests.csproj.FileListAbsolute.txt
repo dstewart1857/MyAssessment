@@ -1,0 +1,5 @@
+C:\Repos\MyAssessment\Wordle-API-Tests\obj\Debug\net6.0\Wordle_API_Tests.csproj.AssemblyReference.cache
+C:\Repos\MyAssessment\Wordle-API-Tests\obj\Debug\net6.0\Wordle_API_Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\MyAssessment\Wordle-API-Tests\obj\Debug\net6.0\Wordle_API_Tests.AssemblyInfoInputs.cache
+C:\Repos\MyAssessment\Wordle-API-Tests\obj\Debug\net6.0\Wordle_API_Tests.AssemblyInfo.cs
+C:\Repos\MyAssessment\Wordle-API-Tests\obj\Debug\net6.0\Wordle_API_Tests.csproj.CoreCompileInputs.cache

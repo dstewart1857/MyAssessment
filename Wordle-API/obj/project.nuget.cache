@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mea6qFgc82q4FMU/TgMqJ4TuC6UH7Ki4BYi1/xag/hOqQwxHaMubAW5k+Bg5XlqFpa8uJGrLLY+ckJiP9Vetbw==",
+  "dgSpecHash": "bEiOoFsPED4nQT+SEouGIsiXiHrfQGOSzyFzM9GqeWjDOkbymX1kOX4UoBqk+V+DrxvpnNXgJSdVf74BxbYslA==",
   "success": true,
-  "projectFilePath": "C:\\Repos\\MyAssessment\\Wordle-API\\Wordle-API.csproj",
+  "projectFilePath": "C:\\Repos\\MyAssessment\\Wordle-API\\Wordle_API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Doug.Stewart\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Doug.Stewart\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
