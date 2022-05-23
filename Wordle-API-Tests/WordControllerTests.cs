@@ -7,7 +7,7 @@ namespace Wordle_API_Tests
     [TestFixture]
     public class Tests
     {
-        public WordController wordController = new();
+//        public WordController wordController = new();
 
         [SetUp]
         public void Setup()
