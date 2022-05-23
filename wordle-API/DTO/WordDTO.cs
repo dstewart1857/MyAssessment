@@ -1,4 +1,4 @@
-namespace wordle-API.DTO
+namespace Wordle_API.DTO
 {
     public class WordDTO
     {

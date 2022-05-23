@@ -1,46 +1,59 @@
 ﻿using System;
 using Microsoft.AspNetCore.Mvc;
-using MyAssessment.DTO;
-using MyAssessment.Service;
+using Wordle_API.DTO;
+using Wordle_API.Service;
 using Swashbuckle.AspNetCore.Annotations;
 
-namespace MyAssessment.Controllers
+namespace Wordle_API.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class ReportCardController : Controller
+    public class WordController : Controller
     {
-        private ReportCardService reportCardService = new();
-        private static List<TestDTO> testCollection = new();
+        private WordService wordService = new();
+        private static List<WordDTO> wordCollection = new();
 
 
-        [Route("submitTests")]
+        [Route("loadWords")]
         [HttpPost]
-        [SwaggerOperation(Summary = "-- Adds test objects to a test collection.",
-                        Description = "Builds a collection of test objects that can be retrieved using the 'getTests' endpoint.")]
-        public void SubmitTests([FromBody] List<TestDTO> newTests)
+        [SwaggerOperation(Summary = "-- Adds word objects to a word collection.",
+                        Description = "Builds a collection of word objects that can be retrieved using the 'getWords' endpoint.")]
+//        public void SubmitTests([FromBody] List<WordDTO> newTests)
+        public void LoadWords()
         {
-            testCollection.AddRange(newTests);
+            List<WordDTO> words = wordService.GetWords();
+            wordCollection.AddRange(words);
         }
 
-        [Route("getTests")]
+        [Route("getWords")]
         [HttpGet]
-        [SwaggerOperation(Summary = "-- Gets a list of test objects from a previously built test collection.",
-                        Description = "Returns the list of test objects stored in the collection created by using the 'submitTests' endpoint.")]
-        public List<TestDTO> GetTestCollection()
+        [SwaggerOperation(Summary = "-- Gets a list of word objects from a previously built word collection.",
+                        Description = "Returns the list of word objects stored in the word collection.")]
+        public List<WordDTO> GetWordCollection()
         {
-            return testCollection;
+            return wordCollection;
         }
 
-        [Route("deleteAllTests")]
+        [Route("getRandomWord")]
+        [HttpGet]
+        [SwaggerOperation(Summary = "-- Gets a random word from a previously built word collection.",
+                        Description = "Returns a random word from objects stored in the word collection.")]
+        public string GetRandomWord()
+        {
+            int size = wordCollection.Count();
+
+            return wordCollection[0].Word;
+        }
+
+        [Route("deleteAllWords")]
         [HttpDelete]
-        [SwaggerOperation(Summary = "-- Deletes all test objects in the current test collection.",
-                        Description = "This will delete ALL tests that exist in the current test collection.")]
-        public void DeleteTestCollection()
+        [SwaggerOperation(Summary = "-- Deletes all word objects in the current word collection.",
+                        Description = "This will delete ALL words that exist in the current word collection.")]
+        public void DeleteWordCollection()
         {
-            testCollection.Clear();
+            wordCollection.Clear();
         }
-
+/*
         [Route("sortedGrades")]
         [HttpGet]
         [SwaggerOperation(Summary = "-- Returns a list of sorted tests by student name or grade. The tests are first graded and then sorted.",
@@ -74,6 +87,6 @@ namespace MyAssessment.Controllers
 
             return Ok(sortedReportCards);
         }
-
+*/
     }
 }

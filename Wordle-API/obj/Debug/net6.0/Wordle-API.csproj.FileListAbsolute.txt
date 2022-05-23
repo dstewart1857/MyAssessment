@@ -26,3 +26,5 @@ C:\Repos\MyAssessment\Wordle-API\obj\Debug\net6.0\refint\Wordle-API.dll
 C:\Repos\MyAssessment\Wordle-API\obj\Debug\net6.0\Wordle-API.pdb
 C:\Repos\MyAssessment\Wordle-API\obj\Debug\net6.0\Wordle-API.genruntimeconfig.cache
 C:\Repos\MyAssessment\Wordle-API\obj\Debug\net6.0\ref\Wordle-API.dll
+C:\Repos\MyAssessment\Wordle-API\bin\Debug\net6.0\words.json
+C:\Repos\MyAssessment\Wordle-API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Annotations.dll

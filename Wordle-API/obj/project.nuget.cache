@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qr0APN54qzxxtOnMIbTkAUDsApqO3rIuSokKv52gihY7pyYgnnku7h9zV9Y85qT7KcsELCE+GyCmnf9FzytqGg==",
+  "dgSpecHash": "mea6qFgc82q4FMU/TgMqJ4TuC6UH7Ki4BYi1/xag/hOqQwxHaMubAW5k+Bg5XlqFpa8uJGrLLY+ckJiP9Vetbw==",
   "success": true,
   "projectFilePath": "C:\\Repos\\MyAssessment\\Wordle-API\\Wordle-API.csproj",
   "expectedPackageFiles": [
@@ -8,8 +8,9 @@
     "C:\\Users\\Doug.Stewart\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\Doug.Stewart\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\Doug.Stewart\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
-    "C:\\Users\\Doug.Stewart\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
-    "C:\\Users\\Doug.Stewart\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\Doug.Stewart\\.nuget\\packages\\swashbuckle.aspnetcore.annotations\\6.3.1\\swashbuckle.aspnetcore.annotations.6.3.1.nupkg.sha512",
+    "C:\\Users\\Doug.Stewart\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.3.1\\swashbuckle.aspnetcore.swagger.6.3.1.nupkg.sha512",
+    "C:\\Users\\Doug.Stewart\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.3.1\\swashbuckle.aspnetcore.swaggergen.6.3.1.nupkg.sha512",
     "C:\\Users\\Doug.Stewart\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
   ],
   "logs": []

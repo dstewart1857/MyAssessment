@@ -1,12 +1,42 @@
-﻿using TestCoreAPI.DTO;
-using System.Runtime.CompilerServices;
-using System.Net;
+﻿using Wordle_API.DTO;
+using Newtonsoft.Json;
 
 //[assembly: InternalsVisibleTo("TestCoreAPITests")]
-namespace MyAssessment.Service
+namespace Wordle_API.Service
 {
     public class WordService
     {
+//        public List<WordDTO> words = new List<WordDTO>();
+
+        public List<WordDTO> GetWords()
+        {
+            List<WordDTO> words = new();
+
+            using (StreamReader r = new StreamReader("..\\Wordle-API\\words.json"))
+            {
+                string json = r.ReadToEnd();
+                if (json != null)
+                {
+#pragma warning disable CS8600 // Possible null reference assignment.
+                    words = JsonConvert.DeserializeObject<List<WordDTO>>(json);
+                    if(words == null)
+                    {
+                        words = new List<WordDTO>();
+                        words.Add(new WordDTO(0, "No words found!"));
+                    }
+#pragma warning restore CS8600 // Possible null reference assignment.
+                }
+                else
+                {
+                    words.Add(new WordDTO(0,"No words found!"));
+                }
+            }
+            return words;
+        }
+
+
+
+/*
         public ReportCardDTO GradeTest(TestDTO testDTO)
         {
             ReportCardDTO reportCardDTO = new();
@@ -57,54 +87,6 @@ namespace MyAssessment.Service
             }
             return grade;
 
-        }
-/*
-        internal List<CandlestickDTO> GetCandlestickChartData(List<TestDTO> testCollection)
-        {
-            if (testCollection.Count == 0)
-            {
-                throw new ArgumentException("The test collection was empty!\nCandlestick chart data connot be provided unless the test collection contains at least 4 test results for each class!");
-            }
-
-            List<CandlestickDTO> candlestickData = new();
-            List<string> classNames = new();
-
-            // Get list of class names in testCollection
-            foreach (TestDTO testDTO in testCollection)
-            {
-                if (!classNames.Contains(testDTO.className))
-                {
-                    classNames.Add(testDTO.className);
-                }
-            }
-
-            // Get scores for each class and calculate quartiles
-            foreach (string className in classNames)
-            {
-                // Get test scores for each class
-                List<int> classTestScores = new();
-                foreach (TestDTO testDTO in testCollection)
-                {
-                    if (testDTO.className == className)
-                    {
-                        classTestScores.Add(testDTO.score);
-                    }
-                }
-
-                // Check if at least 4 test scores exist for the class
-                if (classTestScores.Count < 4)
-                {
-                    throw new ArgumentException("Did not find at least 4 tests for the " + className + " class!\nCandlestick chart data connot be provided unless the test collection contains at least 4 test results for each class!");
-                }
-
-                classTestScores.Sort();
-
-                CandlestickDTO candlestickDTO = GetQuartiles(classTestScores.ToArray());
-                candlestickDTO.Title = className;
-                candlestickData.Add(candlestickDTO);
-            }
-
-            return candlestickData;
         }
 */
 
