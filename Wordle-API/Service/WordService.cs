@@ -8,13 +8,10 @@ namespace Wordle_API.Service
         public List<WordDTO> GetWords()
         {
             List<WordDTO> words = new();
-            String path = "..\\Wordle-API\\WordList.json";
 
-            String location = System.Reflection.Assembly.GetExecutingAssembly().Location;
-            if (location.Contains("Debug"))
-            {
-                path = "..\\..\\..\\..\\Wordle-API\\WordList.json";
-            }
+            String path = System.Reflection.Assembly.GetExecutingAssembly().Location;
+            path = path.Replace("\\bin\\Debug\\net6.0\\Wordle_API.dll", "");
+            path = path + "\\WordList.json";
 
             using (StreamReader r = new StreamReader(path))
             {
