@@ -444,6 +444,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Microsoft.NET.Test.Sdk": "17.2.0",
+          "NUnit": "3.13.3",
+          "NUnit3TestAdapter": "4.2.1",
           "Newtonsoft.Json": "13.0.1",
           "Swashbuckle.AspNetCore": "6.2.3",
           "Swashbuckle.AspNetCore.Annotations": "6.3.1"
@@ -1583,5 +1586,34 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Detected package downgrade: Microsoft.NET.Test.Sdk from 17.2.0 to 16.11.0. Reference the package directly from the project to select a different version. \r\n Wordle_API_Tests -> Wordle_API -> Microsoft.NET.Test.Sdk (>= 17.2.0) \r\n Wordle_API_Tests -> Microsoft.NET.Test.Sdk (>= 16.11.0)",
+      "libraryId": "Microsoft.NET.Test.Sdk",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Detected package downgrade: NUnit from 3.13.3 to 3.13.2. Reference the package directly from the project to select a different version. \r\n Wordle_API_Tests -> Wordle_API -> NUnit (>= 3.13.3) \r\n Wordle_API_Tests -> NUnit (>= 3.13.2)",
+      "libraryId": "NUnit",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Detected package downgrade: NUnit3TestAdapter from 4.2.1 to 4.0.0. Reference the package directly from the project to select a different version. \r\n Wordle_API_Tests -> Wordle_API -> NUnit3TestAdapter (>= 4.2.1) \r\n Wordle_API_Tests -> NUnit3TestAdapter (>= 4.0.0)",
+      "libraryId": "NUnit3TestAdapter",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

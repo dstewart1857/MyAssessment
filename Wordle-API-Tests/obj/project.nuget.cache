@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "wsZNlEETotYg5VcY3N2c1POOge8jTJrRDpPfwvdo8+UcwOL6wt8EnG4cxC5x+0+k8UIWQxLTPlV4Mh6wVeK9lg==",
-  "success": true,
+  "dgSpecHash": "7CTKYdvLU/8vdSa3MQtHAqJ/GMGfccGXW58Co0FnflgRogaItNIVRZVB16nj+6JjIokqTBY1W3SXS969gLx5Uw==",
+  "success": false,
   "projectFilePath": "C:\\Repos\\MyAssessment\\Wordle-API-Tests\\Wordle_API_Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Doug.Stewart\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
@@ -24,5 +24,33 @@
     "C:\\Users\\Doug.Stewart\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
     "C:\\Users\\Doug.Stewart\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Detected package downgrade: Microsoft.NET.Test.Sdk from 17.2.0 to 16.11.0. Reference the package directly from the project to select a different version. \r\n Wordle_API_Tests -> Wordle_API -> Microsoft.NET.Test.Sdk (>= 17.2.0) \r\n Wordle_API_Tests -> Microsoft.NET.Test.Sdk (>= 16.11.0)",
+      "libraryId": "Microsoft.NET.Test.Sdk",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Detected package downgrade: NUnit from 3.13.3 to 3.13.2. Reference the package directly from the project to select a different version. \r\n Wordle_API_Tests -> Wordle_API -> NUnit (>= 3.13.3) \r\n Wordle_API_Tests -> NUnit (>= 3.13.2)",
+      "libraryId": "NUnit",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Detected package downgrade: NUnit3TestAdapter from 4.2.1 to 4.0.0. Reference the package directly from the project to select a different version. \r\n Wordle_API_Tests -> Wordle_API -> NUnit3TestAdapter (>= 4.2.1) \r\n Wordle_API_Tests -> NUnit3TestAdapter (>= 4.0.0)",
+      "libraryId": "NUnit3TestAdapter",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

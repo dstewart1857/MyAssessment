@@ -6,20 +6,22 @@ using Wordle_API.DTO;
 namespace Wordle_API_Tests
 {
     [TestFixture]
-    public class Tests
+    public class WordControllerTests
     {
         public WordController wordController = new();
 
         [SetUp]
         public void Setup()
         {
+            //wordController = new();
         }
 
         [Test]
         public void GetWords()
         {
             List<WordDTO> wordCollection = wordController.GetWordCollection();
-            Assert.Pass();
+            Assert.IsNotNull(wordCollection);
+            Assert.True(wordCollection.Count > 0);
         }
     }
 }

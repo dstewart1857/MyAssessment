@@ -16,17 +16,7 @@ namespace Wordle_API.Controllers
         {
             wordCollection.AddRange(wordService.GetWords());
         }
-/*
-        [Route("loadWords")]
-        [HttpPost]
-        [SwaggerOperation(Summary = "-- Adds word objects to a word collection.",
-                        Description = "Builds a collection of word objects that can be retrieved using the 'getWords' endpoint.")]
-        public void LoadWords()
-        {
-            List<WordDTO> words = wordService.GetWords();
-            wordCollection.AddRange(words);
-        }
-*/
+
         [Route("getWords")]
         [HttpGet]
         [SwaggerOperation(Summary = "-- Gets a list of word objects from a previously built word collection.",
@@ -54,16 +44,6 @@ namespace Wordle_API.Controllers
             int selection = r.Next(0, wordCollection.Count());
             return wordCollection[selection].Word;
         }
-
-        [Route("deleteAllWords")]
-        [HttpDelete]
-        [SwaggerOperation(Summary = "-- Deletes all word objects in the current word collection.",
-                        Description = "This will delete ALL words that exist in the current word collection.")]
-        public void DeleteWordCollection()
-        {
-            wordCollection.Clear();
-        }
-
 
     }
 }
